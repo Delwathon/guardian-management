@@ -1,24 +1,24 @@
 {
-    "name": "delwathon/guardian-module",
-    "description": "Guardian-module is a module that manages Guardian",
-    "type": "library",
-    "authors": [
-        {
-            "name": "Toyibu Abidogun",
-            "email": "toyibu.abidogun@delwathon.com"
-        }
-    ],
-    "license": "MIT",
-    "minimum-stability": "dev",
-    "extra": {
-        "laravel": {
-            "providers": [],
-            "aliases": {}
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "Modules\\Guardian\\": ""
-        }
+  "name": "delwathon/guardian-module",
+  "description": "Guardian-module is a module that manages Guardian for eduthon product",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Toyibu Abidogun",
+      "email": "toyibu.abidogun@delwathon.com"
     }
+  ],
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "extra": {
+    "laravel": {
+      "providers": [],
+      "aliases": {}
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Modules\\Guardian\\": ""
+    }
+  }
 }
