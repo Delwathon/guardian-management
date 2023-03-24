@@ -5,8 +5,8 @@ namespace Modules\Guardian\Entities;
 use App\Models\User;
 use App\Models\State;
 use App\Models\Branch;
-use App\Models\Student;
 use App\Models\LocalGovernment;
+use Modules\Student\Entities\Student;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 

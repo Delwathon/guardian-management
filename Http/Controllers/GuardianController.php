@@ -10,6 +10,7 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Hash;
 use Modules\Guardian\Entities\Guardian;
 use Illuminate\Contracts\Support\Renderable;
+use Modules\Admission\Entities\Enrol;
 
 class GuardianController extends Controller
 {
@@ -112,8 +113,10 @@ class GuardianController extends Controller
 
         $branches = Branch::get();
         $guardian = Guardian::with(['user', 'branch', 'students', 'state', 'lga'])->where('id', $id)->first();
+        $enrols = Enrol::all()->sortByDesc('id');
+        // return $guardian;
         $states = State::get();
-        return view('guardian.profile', compact(['guardian', 'branches', 'states']));
+        return view('guardian.profile', compact(['guardian', 'branches', 'states', 'enrols']));
 
     }
 
